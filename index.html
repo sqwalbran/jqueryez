@@ -2,11 +2,11 @@
 <html>
 <head>
 <title>Jquery in Easy Steps</title>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-jQuery(function() {
-  jQuery.get("home-snippet.html",function(data){
-    jQuery("#main-content").append(data);
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+  $.get("home-snippet.html",function(data){
+    $("#main-content").append(data);
   });
 });
 </script>
