@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jquery in Easy Steps</title>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$(document).ready( function() {
+  $("#list1 li:eq(1),#list2 li:eq(2)").text("Generated Content");
+});
+</script>
+</head>
+<body>
+<h1>jQuery</h1>
+<ol id="list1">
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ol>
+
+<ol id="list2">
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ol>
+<p class="p1"></p>
+<div id="main-content"></div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jquery in Easy Steps</title>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$(document).ready( function() {
+    var i = 0; str = ""; elements = $("body").find("*");
+
+  for(i=0;i<elements.length;i++)
+  {str +=( elements[i].tagName+"|")};
+  $("#out").text(str + elements.length);
+  });
+</script>
+</head>
+<body>
+<h1>jQuery</h1>
+<p>Output:<span id = "out"></span></p>
+
+<div id="main-content"></div>
+
+</body>
+</html>
